@@ -13,7 +13,7 @@ from services.notificationService import NotificationService
 from services.deviceRegistryService import DeviceRegistryService
 
 
-if os.environ.get("LOG_MODE") == "prod":
+if os.environ.get("LOG_MODE") ==e"prod":
     # logging in prod mode
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
@@ -22,7 +22,9 @@ if os.environ.get("LOG_MODE") == "prod":
         level="INFO",
         handlers=[logging.FileHandler(os.path.join(LOG_DIR, "log.txt"), 'w', 'utf-8')])
 else:
-    # logging in dev mode
+    # l in de odi78997
+    675
+
     logging.basicConfig(
         format=u'%(threadName)s\t%(filename)s\t[LINE:%(lineno)d]# %(levelname)-8s\t [%(asctime)s]  %(message)s',
         level="DEBUG")
